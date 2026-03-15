@@ -55,9 +55,15 @@ This application is developed for **educational and health awareness purposes on
 
 ---
 
-## Author
+## Contributors
 
-Lubna Shafee
-Abia Maureen
-Aateka Qurratulain
-B.Sc Data Science
+## Contributors
+
+This project was developed as part of a group project.
+
+* Lubna – UI design, website layout, and frontend structure.
+* Abia – Health risk analysis logic and research on disease risk factors.
+* Aateka – Testing, documentation, and project support.
+
+All members contributed to the development and improvement of the PreCare AI health risk assessment system.
+
