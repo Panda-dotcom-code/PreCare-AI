@@ -61,9 +61,9 @@ This application is developed for **educational and health awareness purposes on
 
 This project was developed as part of a group project.
 
-* Lubna – UI design, website layout, and frontend structure.
+* Lubna (panda-dotcom-code)– UI design, website layout, and frontend structure.
 * Abia (@Shecodes012)– Health risk analysis logic and research on disease risk factors.
-* Aateka – Testing, documentation, and project support.
+* Aateka (@aatekaqurratulain-stack)– Testing, documentation, and project support.
 
 All members contributed to the development and improvement of the PreCare AI health risk assessment system.
 
