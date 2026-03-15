@@ -1,0 +1,508 @@
+/* General Page Styling */
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#F9F7F3;
+color:#1F1F1F;
+}
+
+
+/* Navigation Bar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 40px;
+
+background:#2FAF9B;
+color:white;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:white;
+}
+
+.hero h1{
+color:#4E342E;
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+margin-top:10px;
+}
+
+.start-btn{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+
+background:#6EC1E4;
+color:white;
+
+font-size:16px;
+cursor:pointer;
+}
+
+
+/* Risk Cards */
+
+.risk-preview{
+padding:60px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+
+border-radius:12px;
+
+width:250px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+color:#2FAF9B;
+}
+
+
+/* Footer */
+
+footer{
+margin-top:60px;
+padding:20px;
+
+text-align:center;
+
+background:#8B5A2B;
+color:white;
+}
+
+.disclaimer{
+font-size:12px;
+margin-top:5px;
+}
+/* Risk Assessment Form */
+
+.risk-form{
+
+width:600px;
+
+margin:0 auto;
+
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+/* Inputs */
+
+.risk-form input,
+.risk-form select{
+
+width:100%;
+
+padding:8px;
+
+margin-top:5px;
+
+margin-bottom:15px;
+
+border-radius:6px;
+
+border:1px solid #ccc;
+
+}
+
+/* Center Button */
+
+.risk-form button{
+
+display:block;
+
+margin:20px auto;
+
+padding:12px 25px;
+
+background:#2FAF9B;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+/* Risk Result Section */
+
+#result{
+
+width:600px;
+
+margin:40px auto;
+
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+text-align:left;
+
+}
+/* Chatbot */
+
+#chatbot{
+
+position:fixed;
+
+bottom:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:320px;
+
+background:white;
+
+padding:15px;
+
+border-radius:12px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+#chat-window{
+
+height:150px;
+
+overflow-y:auto;
+
+border:1px solid #ddd;
+
+margin-bottom:10px;
+
+padding:8px;
+
+background:#F9F7F3;
+
+}
+
+#user-input{
+
+width:70%;
+
+padding:6px;
+
+}
+
+#chatbot button{
+
+background:#2FAF9B;
+
+color:white;
+
+border:none;
+
+padding:6px 10px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+margin-top:5px;
+
+}
+
+.quick-buttons button{
+
+font-size:12px;
+
+margin:3px;
+
+}
+/* Chat Icon */
+
+#chat-icon{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+width:60px;
+
+height:60px;
+
+background:#2FAF9B;
+
+color:white;
+
+font-size:30px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+cursor:pointer;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+
+z-index:1000;
+
+}
+
+
+/* Chat Window */
+
+#chatbot{
+
+display:none;
+
+position:fixed;
+
+bottom:90px;
+
+right:20px;
+
+width:320px;
+
+background:white;
+
+padding:15px;
+
+border-radius:12px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+z-index:1000;
+
+}
+
+
+#chat-window{
+
+height:150px;
+
+overflow-y:auto;
+
+border:1px solid #ddd;
+
+margin-bottom:10px;
+
+padding:8px;
+
+background:#F9F7F3;
+
+}
+
+#user-input{
+
+width:70%;
+
+padding:6px;
+
+}
+
+#chatbot button{
+
+background:#2FAF9B;
+
+color:white;
+
+border:none;
+
+padding:6px 10px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+margin-top:5px;
+
+}
+
+.quick-buttons button{
+
+font-size:12px;
+
+margin:3px;
+
+}
+/* Fix checkbox alignment */
+
+input[type="checkbox"]{
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.risk-form label{
+    vertical-align: middle;
+}
+
+.risk-form input[type="checkbox"]{
+    transform: translateY(2px);
+    margin-right: 6px;
+}
+.check{
+display:flex;
+align-items:center;
+gap:8px;
+margin:6px 0;
+font-size:16px;
+}
+
+.check input{
+margin:0;
+}
+input[type="checkbox"]{
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+}
+.checkbox-line{
+display:flex;
+align-items:center;
+gap:8px;
+margin:5px 0;
+}
+/* FORM ALIGNMENT */
+
+.risk-form{
+width:600px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Input fields */
+
+.risk-form input,
+.risk-form select{
+width:100%;
+padding:8px;
+margin:6px 0 15px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+/* Checkbox rows */
+
+.checkbox-line{
+display:flex;
+align-items:center;
+gap:8px;
+margin:6px 0;
+font-size:15px;
+}
+
+/* Fix checkbox size */
+
+.checkbox-line input{
+width:auto;
+margin:0;
+}
+
+/* Button style */
+
+.risk-form button{
+background:#2FAF9B;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+}
+/* Progress Bars */
+
+.progress-bar{
+width:100%;
+background:#eee;
+border-radius:20px;
+height:20px;
+margin-bottom:15px;
+overflow:hidden;
+}
+
+.progress-bar div{
+height:100%;
+width:0%;
+background:#2FAF9B;
+transition:width 1s;
+}
+/* Result Section Buttons */
+
+#result button{
+padding:10px 18px;
+border:none;
+border-radius:6px;
+font-size:15px;
+cursor:pointer;
+margin-right:10px;
+margin-top:10px;
+color:white;
+}
+
+
+/* Reassess Risk Button */
+
+#result button:first-of-type{
+background:#2FAF9B;
+}
+
+
+/* Return to Home Button */
+
+#result a button{
+background:#8B5A2B;
+}

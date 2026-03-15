@@ -1,0 +1,259 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Risk Assessment - PreCare AI</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+<h2 class="logo">PreCare AI</h2>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="risk.html">Risk Assessment</a></li>
+</ul>
+
+</nav>
+
+
+<!-- Page Title -->
+
+<section class="hero">
+
+<h1>Risk Assessment</h1>
+
+<p>
+Early health risk estimation based on lifestyle patterns and family medical history
+</p>
+
+</section>
+
+
+<!-- Risk Form -->
+
+<section class="risk-form">
+
+<h2>Basic Health Information</h2>
+
+<label>Age</label>
+<input type="number" id="age">
+
+<label>Gender</label>
+<select id="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+
+<h2>Lifestyle Information</h2>
+
+<label>Diet Quality</label>
+<select id="diet">
+<option>Poor</option>
+<option>Moderate</option>
+<option>Healthy</option>
+</select>
+
+<label>Physical Activity Level</label>
+<select id="activity">
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<label>Smoking Habit</label>
+<select id="smoking">
+<option>No</option>
+<option>Yes</option>
+</select>
+
+<label>Alcohol Consumption</label>
+<select id="alcohol">
+<option>No</option>
+<option>Yes</option>
+</select>
+
+
+<h2>Family Medical History</h2>
+
+<label class="checkbox-line">
+<input type="checkbox" id="diabetes">
+<span>Family history of Diabetes</span>
+</label>
+
+<label class="checkbox-line">
+<input type="checkbox" id="anemia">
+<span>Family history of Anemia</span>
+</label>
+
+<label class="checkbox-line">
+<input type="checkbox" id="cancer">
+<span>Family history of Cancer</span>
+</label>
+
+<label class="checkbox-line">
+<input type="checkbox" id="tb">
+<span>Family history of Tuberculosis</span>
+</label>
+
+
+<h2>Observed Symptoms</h2>
+
+<label class="checkbox-line">
+<input type="checkbox" id="fatigue">
+<span>Fatigue</span>
+</label>
+
+<label class="checkbox-line">
+<input type="checkbox" id="weight">
+<span>Unexplained weight loss</span>
+</label>
+
+<label class="checkbox-line">
+<input type="checkbox" id="cough">
+<span>Persistent cough</span>
+</label>
+
+<label class="checkbox-line">
+<input type="checkbox" id="breath">
+<span>Shortness of breath</span>
+</label>
+
+<label class="checkbox-line">
+<input type="checkbox" id="illness">
+<span>Frequent illness</span>
+</label>
+
+
+<br><br>
+
+<button onclick="calculateRisk()">Calculate Risk Percentage</button>
+
+</section>
+
+
+<!-- Result Section -->
+
+<section id="result">
+
+<h2>Risk Assessment Result</h2>
+
+<p>
+Disease Risk Percentage: <span id="riskPercent">0%</span>
+</p>
+
+<p>
+Risk Level: <span id="riskLevel">Low</span>
+<h3>Disease Risk Breakdown</h3>
+
+<p>Diabetes Risk</p>
+<div class="progress-bar">
+<div id="diabetesBar"></div>
+</div>
+
+<p>Anemia Risk</p>
+<div class="progress-bar">
+<div id="anemiaBar"></div>
+</div>
+
+<p>Cancer/TB Risk</p>
+<div class="progress-bar">
+<div id="cancerBar"></div>
+</div>
+</p>
+
+<h3>Recommended Preventive Measures</h3>
+
+<ul>
+
+<li>Maintain a balanced and nutritious diet</li>
+<li>Improve physical activity and daily movement</li>
+<li>Avoid smoking and alcohol consumption</li>
+<li>Maintain healthy body weight</li>
+<li>Follow regular health screening routines</li>
+<li>Seek medical consultation if symptoms persist</li>
+
+</ul>
+
+
+<h4>Disclaimer</h4>
+
+<p>
+PreCare does not provide medical diagnosis. The risk percentages generated are intended for early health risk awareness only and should not be considered a substitute for professional medical advice.
+</p>
+
+<br>
+
+<button onclick="location.reload()">Reassess Risk</button>
+
+<a href="index.html">
+<button>Return to Home</button>
+</a>
+
+</section>
+
+
+<!-- Chat Icon -->
+
+<div id="chat-icon" onclick="toggleChat()">
+💬
+</div>
+
+
+<!-- Chat Window -->
+
+<div id="chatbot">
+
+<h3>PreCare Assistant</h3>
+
+<div id="chat-window"></div>
+
+<input type="text" id="user-input" placeholder="Ask about your health risk...">
+
+<button onclick="sendMessage()">Send</button>
+
+<div class="quick-buttons">
+
+<button onclick="quickQuestion('Explain Diabetes Risk')">
+Diabetes Risk
+</button>
+
+<button onclick="quickQuestion('Explain Anemia Risk')">
+Anemia Risk
+</button>
+
+<button onclick="quickQuestion('Explain Cancer TB Risk')">
+Cancer/TB Risk
+</button>
+
+<button onclick="quickQuestion('Preventive Tips')">
+Preventive Tips
+</button>
+
+<button onclick="quickQuestion('Lifestyle Advice')">
+Lifestyle Advice
+</button>
+
+</div>
+
+</div>
+
+
+<script src="js/chatbot.js"></script>
+<script src="js/risk.js"></script>
+
+</body>
+</html>
+```
