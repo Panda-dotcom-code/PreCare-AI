@@ -44,7 +44,8 @@ The goal of this project is to promote **early health awareness and preventive h
 
 The deployed web application can be accessed here:
 
-(Your Streamlit link will be added here after deployment)
+https://precare-ai.streamlit.app
+
 
 ---
 
@@ -56,5 +57,7 @@ This application is developed for **educational and health awareness purposes on
 
 ## Author
 
-lubna shafee
+Lubna Shafee
+Abia Maureen
+Aateka Qurratulain
 B.Sc Data Science
